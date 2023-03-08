@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diario el Argentino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img src="img/fondolineas.png" alt="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" id="fondoazul">
+        <div class="container">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <form class="d-flex  search-form" id="buscar" role="search">
+            <input class="form-control my-1" id="buscador" type="search" placeholder="buscar..."aria-label="Search">
+            <svg
+            class="bi bi-search my-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="14"
+            fill="white"
+            viewBox="-5 -5 25 25">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="ciudad.html">CIUDAD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INFO.GENERAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="departamento.html">DEPARTAMENTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="funebres.html">FUNEBRES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sociales.html">SOCIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="policiales.html">POLICIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DEPORTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="provinciales.html">PROVINCIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nacionales.html">NACIONALES</a>
+            </li>
+          </ul>
+        </div>
+        </div> 
+      </div>
+    </nav>
+
+    <nav class="navbar ">
+      <div class="container mt-3" id="containerss">
+          <button class="navbar-toggler navbar-toggler-start ms-2 border-0 d-block" id="botonx" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" title="#">
+            <span class="navbar-toggler-icon"></span>
+            <span>secciones</span>
+          </button>
+          <img class="imges" src="img/logo.png" alt="" style="width: 280px; height: 35px; display:block;"> 
+        <div class="subsin">
+          <h5 class="subsc">Suscribete</h5>
+          <h6 class="ingresa">Ingresa</h6>
+        </div>
+           
+          
+          
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" id="suscribe">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suscribete</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+
+            <form class="d-flex  search-form" id="buscar" role="search">
+              <input class="form-control my-1" id="buscador2" type="search" placeholder="buscar..."aria-label="Search">
+              <svg
+              class="be bi-search my-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="14"
+              fill="white"
+              viewBox="-5 -5 25 25">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            </form>
+
+            <ul
+            class="navbar-nav justify-content-start flex-grow-1 pe-3"
+            id="linkes"
+          >
+            <li class="nav-item2 edicion-empresa">
+              <a class="nav-link" href="#">Edicion Empresa</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="ciudad.html">Ciudad</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="funebres.html">Funebres</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="index.html">Info. General</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="departamento.html">Departamento</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="sociales.html">Sociales</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="policiales.html">Policiales</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="#">Deportes</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="provinciales.html">Provinciales</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="nacionales.html">Nacionales</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="#">Internacionales</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="#">Linea Directa</a>
+            </li>
+            <li class="nav-item2 tiempo">
+              <a class="nav-link" href="#">Tiempo</a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="#">Facebook</a>
+            </li>
+            <li class="nav-item2 twitter">
+              <a class="nav-link" href="#">Twitter</a>
+            </li>
+          </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <p class="parrafo1"> Lunes 06 de marzo de 2023</p>
+    </div>
+    <div class="container-fluit "id="fondito2">
+      <div class="container" id="cont123">
+       
+        <div class="catalogo">
+          <h5 class="h5sss">LO ULTIMO ►</h5>
+          <a href="#" style="margin-left:5px; margin-right: 5px; color:#2c679f; text-decoration: none;">CIUDAD</a>
+          <a href="#" style="text-decoration: none; color:black">La escritora millennial que pasó de escribir en su celular a publicar su primer libro</a>
+          <a class="ciudad" href="#" style="margin-left:5px; margin-right: 5px; color:#2c679f; text-decoration: none;">CIUDAD </a>
+          <a class="ciudad2" href="#" style="text-decoration: none; color:black">El Ejecutivo Municipal abrió la primera mesa paritaria del 2023</a>
+        </div>
+       
+      </div>
+    </div>
+    <img src="img/fondolineas.png" title="#"/>
+    <div class="container">
+      <div class="principal">
+        <h1 style="float: left;">Ciudad</h1>
+        <h3 style="float: right;">+NOTAS</h3>
+        <div style="clear: both;"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cajasimages" style="width: 100%; display:flex">
+        <div class="caja1">
+          <h1>Vuelta al cole: hay faltantes de algunos utiles escolares y precios 110% mas altos que el año pasado</h1> 
+          <img src="img/vuelta_al_cole.avif" style="height:350px" alt="Vuelta al cole: hay faltantes de algunos utiles escolares y precios 110% mas altos que el año pasado"
+          title="Vuelta al cole: hay faltantes de algunos utiles escolares y precios 110% mas altos que el año pasado">
+        </div>
+
+        <div class="caja2">
+          <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="md4caja">
+                <img src="img/nacionales.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+              </div>
+              <div class="col-md-8" id="md8caja">
+                <div class="card-body" id="cardbody">
+                  <h6>NACIONALES</h6>
+                  <p class="card-text">Aseguran que Argentina aumento 30% la conectividad rural entre 2021 y 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="md4caja">
+                <img src="img/ciencia.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+              </div>
+              <div class="col-md-8" id="md8caja">
+                <div class="card-body" id="cardbody2">
+                  <h6>PROVINCIALES</h6>
+                  <p class="card-text">Se invertiran mas de 200 millones de pesos en proyectos de innovacion y desarrollo entrerrianos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="md4caja">
+                <img src="img/prov.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+              </div>
+              <div class="col-md-8" id="md8caja">
+                <div class="card-body" id="cardbody3">
+                  <h6>PROVINCIALES</h6>
+                  <p class="card-text">Avanza la construccion de pilotes y columnas del nuevo puente de El Cinto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="   mb-1 " style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="md4caja">
+                <img src="img/provs.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+              </div>
+              <div class="col-md-8" id="md8caja">
+                <div class="card-body" id="cardbody4">
+                  <h6>PROVINCIALES</h6>
+                  <p class="card-text">Se proyectan nuevas viviendas para el personal policial con fondos provinciales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/fondo+.png" style="height: 260px;" alt="#"/>
+    <div class="container-fluit" id="fazul">
+      <div class="container d-flex">
+        <div class="card" style="width: 25rem; margin-top:6%; margin-right:3%; border-radius:0%; background: none; border:none; color:white; font-size:20px">
+          <div style="position: relative;">
+            <img src="img/N1.avif" class="card-img-top" alt="..." style="height: 250px; border-radius:0%">
+            <h2 style="position: absolute; bottom: 0; left: 0; font-size:13px; background:#2c679f;top:232px;height:20px">NACIONALES</h2>
+          </div>
+            <p class="card-text" style="padding-top: 10px; width:90%">Schiaretti plantea el "modelo Cordoba" como gestion para una Argentina productiva y federal</p>
+        </div>
+        
+
+        <div class="card" style="width: 25rem; margin-top:6%; margin-right: 3%; border-radius:0%; background: none; border:none; color:white; font-size:20px;">
+          <div style="position: relative;">
+          <img src="img/N2.avif" class="card-img-top" alt="" style="height: 250px; border-radius:0%" >
+          <h5 style="position: absolute; bottom: 0; left: 0;  font-size:13px; background:#2c679f;top:232px;height:20px">NACIONALES</h5>
+        </div>
+            <p class="card-text" style="padding-top: 10px;">Bullrich y Vidal compartiran una actividad y se profundiza la guerra de las fotos en el PRO</p>
+        </div>
+
+        <div class="card" style="width: 25rem; margin-top:6%; margin-right:20px; border-radius:0%; background: none; border:none; color:white; font-size:20px">
+          <div style="position: relative;">
+          <img src="img/N3.avif" class="card-img-top" alt="..." style="height: 250px; border-radius:0%">
+          <H5 style="position: absolute; bottom: 0; left: 0;  font-size:13px; background:#2c679f;top:232px;height:20px">NACIONALES</H5>
+        </div>
+          <div class="">
+            <p class="card-text" style="padding-top: 10px;">Cristina confirmo que participara de una conferencia en Rio Negro</p>
+          </div>
+        </div>
+
+
+      </div>
+      
+    </div>
+    <img src="img/fondo+.png" style="height: 260px;" alt="#"/>
+    <div class="container" style="height: 100px; background:#CFCFCD;">
+      <div class="nubes" style="display:flex; justify-content: center;">
+        <h5 style="width: 300px; height:15px; padding-top:4%; font-size:14px; padding-left:8%">Pronostico en Gualeguaychu</h5>
+        <img src="img/nube.svg" style="width:70px; padding-top:2%" alt="">
+          <h5 style="padding-top: 4%; padding-left:1%; font-size:14px;">T:37.3ºC </h5><p style="padding-top: 3.9%; padding-left:1%;font-size:14px;">ST:34.9ºC | nubes dispersas</p>
+      </div>
+    </div>
+    <div class="container" style="height: 100px;">
+        <div class="EdicionP"><h4>Edicion papel</h4></div>
+      <div class="Opinion"><h4>Opinion</h4></div>
+    </div>
+  <div class="container">
+    <div> 
+      <div class="caja1E" style="float: left; padding-top:1%">
+        <img src="img/E1.avif" style="height: 500px;" alt="">
+        <h5 style="padding-left:12%; padding-right:12%; padding-top:3.5%; font-size:17px">Edición del martes, 07 de marzo de 2023
+          Edicion 07-03-2023</h5>
+        <div style="text-align: center; padding-top: 2%">
+            <a class="susbotn" href="#">Suscribete</a>
+        </div>
+          
+      </div>
+      <div class="caja2E" style="padding-top:3%;">
+        <div style="position: relative;">
+          <img src="img/E2.avif" style="height: 190px; " alt="">
+          <img src="img/ico.svg" style="position: absolute; bottom: -9%; left: 35%;" alt="">
+        </div>
+        <h5 style="padding-top: 5%;">Sesgos en la inteligencia artificial: como se reproduce la discriminacion de genero en algoritmos</h5>
+        <div style="position: relative; padding-top:5%">
+          <img src="img/E3.svg" style="height: 190px; background:#CFCFCD;" alt="">
+          <img src="img/ico.svg" style="position: absolute; bottom: -9%; left: 35%;" alt="">
+        </div>
+        <h5 style="padding-top: 5%;">Los halcones no reforman</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="display:flex; height:280px;">
+    <img src="img/fondob.png" style="padding:1%; height:280px" alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+  </div>  
+  <div class="container" style="height: 120px; border-bottom:1px solid black">
+    <h5 class="Deppp" style="float:left">Deportes</h5>
+    <p class="notass" style="float: right;">+NOTAS</p>
+  </div>
+  <div class="container">
+    <div class="cajasimages" style="width: 100%; display:flex">
+      <div class="caja1">
+        <h1>Los Pumas 7s con rivales confirmados para Hong Kong</h1> 
+        <img src="img/Depo1.avif" style="height:350px" alt="Vuelta al cole: hay faltantes de algunos utiles escolares y precios 110% mas altos que el año pasado"
+        title="Los Pumas 7s con rivales confirmados para Hong Kong">
+      </div>
+
+      <div class="caja2">
+        <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="md4caja">
+              <img src="img/Depo2.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+            </div>
+            <div class="col-md-8" id="md8caja">
+              <div class="card-body" id="cardbody">
+                <h6 style="background: #53A56D">DEPORTES</h6>
+                <p class="card-text">Godoy Cruz vencio a Racing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="md4caja">
+              <img src="img/Depo3.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+            </div>
+            <div class="col-md-8" id="md8caja">
+              <div class="card-body" id="cardbody2">
+                <h6 style="background: #53A56D">DEPORTES</h6>
+                <p class="card-text">Chelsena, con Enzo Fernandez, busca revertir la serie ante Dortmund</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-1" style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="md4caja">
+              <img src="img/Depo4.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+            </div>
+            <div class="col-md-8" id="md8caja">
+              <div class="card-body" id="cardbody3">
+                <h6 style="background: #53A56D">DEPORTES</h6>
+                <p class="card-text">Sergio Fredes se quedo con la Doble Bragado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="   mb-1 " style="max-width: 620px; max-height:125px; padding-left:20px; border-bottom: 1px solid #EFEFEE; border-radius:0%;padding-bottom: 7px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="md4caja">
+              <img src="img/Depo5.avif" class="img-fluid " style="width: 170px; height:100px" alt="">
+            </div>
+            <div class="col-md-8" id="md8caja">
+              <div class="card-body" id="cardbody4">
+                <h6 style="background: #53A56D">DEPORTES</h6>
+                <p class="card-text">Boca, con cambios en el equipo, recibe a Defensa y Justicia por la Liga Profecional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/fondo+.png" style="height: 260px;" alt="#"/>
+  <div class="container" style="height: 100px; border-bottom:1px solid gray">
+    <h5 class="lasmas" style="float:left">Las mas leidas</h5>
+  </div>
+  <div class="container">
+    <div class="cont1" style="height: 450px; width:50%; float:left; padding-top:3%">
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/P1.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>PROVINCIALES</h6>
+              <p class="card-text" style="width: 520px;">Avanza la construccion de pilotes y columnas del nuevo puente de El Cinto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/P2.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>PROVINCIALES</h6>
+              <p class="card-text"style="width: 520px;">Se invertiran mas de 200 millones de pesos en proyectos de innovacion y desarrollo entrerrianos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/P3.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>NACIONALES</h6>
+              <p class="card-text"style="width: 520px;">La gripe aviar pone un freno a la actividad cinegetica</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="cont2" style="height: 450px; width:50%; float:right; padding-top:3%">
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/P4.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>CIUDAD</h6>
+              <p class="card-text"style="width: 520px;">La escritora millennial que paso de escribir en su celular a publicar su primer libro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/p5.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>CIUDAD</h6>
+              <p class="card-text"style="width: 520px;">Ola de calor: "No hay ninguna determinacion para la suspension de clases presenciales en Gualeguaychu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1" style="max-width: 620px; max-height:125px; border-radius:0%;padding-bottom: 7%;">
+        <div class="row g-0">
+          <div class="col-md-4" id="md4caja2">
+            <img src="img/p6.avif" class="img-fluid " style="width: 100px; height:100px" alt="">
+          </div>
+          <div class="col-md-8" id="md8caja2">
+            <div class="card-body" id="cardbody3">
+              <h6>PROVINCIALES</h6>
+              <p class="card-text"style="width: 520px;">Se proyectan nuevas viviendas para el personal policial con fondos provinciales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="display:flex; height:280px;">
+    <img src="img/fondob.png" style="padding:1%; height:280px" alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+  </div>
+  <div class="container" style="height: 100px; border-bottom:1px solid gray">
+    <h5 class="lasmas2" style="float:right">+NOTAS</h5>
+  </div>
+  <div class="container text-center mt-5">
+    <div class="row g-5 mt-3">
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img
+              src="img/a1.avif"
+              class="card-img-top"
+              style="height: 17rem; object-fit: cover"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left"
+              >
+              La escritora millennial que pasó de escribir en su celular a publicar su primer libro
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img src="img/agento.png"class="card-img-top"style="height: 17rem; object-fit: cover"alt="..."/>
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left">Los certificados únicos de discapacidad, CUD, no tienen vencimiento
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img
+              src="img/a3.avif"
+              class="card-img-top"
+              style="height: 17rem; object-fit: cover"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left">Vacuna argentina contra Covid: comienza última fase y convocan a personas voluntarias</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img
+              src="img/a4.avif"
+              class="card-img-top"
+              style="height: 17rem; object-fit: cover"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left">5 usos que le puedes dar a tu tablet: un aparato necesario
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img
+              src="img/a5.avif"
+              class="card-img-top"
+              style="height: 17rem; object-fit: cover"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left">Recomiendan "períodos de descanso" en uso de auriculares y controles para evitar baja de la audición
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="p-0">
+          <div class="" style="width: 25rem; height: 25rem">
+            <img
+              src="img/a6.avif"
+              class="card-img-top"
+              style="height: 17rem; object-fit: cover"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="font-size: 20px; text-align: left">Los brigadistas continúan sofocando incendios al Sur de las islas del Delta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/fondo+.png" style="height: 260px;" alt="#"/>
+
+  <div class="container-fluit policiafondo">
+  <div style="width:100%; height: 170px;"></div>
+  <div class="container-fluit" style="height: 260px;background:rgba(0, 0, 0, 0.615);">
+    <div class="container" style="height: 70px; border-bottom: 2px solid white">
+      <H2 style="padding-top: 15px; color:white">Policiales</H2>
+    </div>
+    <div class="container">
+      <h1 style="color: white; padding-top:15px; font-size:50px">Robaron y en minutos los detuvo la policia</h1>
+    </div>
+  </div>
+  </div>  
+  <div class="container" style="display:flex; height:280px;">
+    <img src="img/fondob.png" style="padding:1%; height:280px" alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+    <img src="img/fondob.png" style="padding:1%; height:280px"alt="">
+  </div>
+  <footer>
+    <div class="container" style=" max-width: 1300px; margin-top: 120px;">
+      <div class="row gy-2" style="border-top: 1px solid black;border-bottom: 1px solid black;">
+        <div class="fila1 col-3">
+          <div class="p-2" style="float: left;">
+           
+              <strong>Nosotros</strong><br>
+               <a href="#"><span>El Argentino de Gualeguaychú</span></a><br>
+              <a href="#"><span>Edición Impresa</span></a></div>
+        </div>
+        <div class="fila2 col-3">
+          <div class="p-2" style="float: left;"><strong>Secciones</strong><br><a href="#"><span>Ciudad</span></a><br>
+            <a href="#"><span>Fúnebres</span></a><br>
+            <a href="#"><span>Info. General</span></a><br>
+            <a href="#"><span>Departamento</span></a><br>
+            <a href="#"><span>Sociales</span></a><br>
+            <a href="#"><span>Policiales</span></a><br>
+            <a href="#"><span>Deportes</span></a><br>
+            <a href="#"><span>Provinciales</span></a><br>
+            <a href="#"><span>Nacionales</span></a><br>
+            <a href="#"><span>Internacionales</span></a><br>
+            <a href="#"><span>Línea Directa</span></a></ul></div>
+        </div>
+  
+        <div class="fila3 col-3">
+          <div class="p-2"><a href="#"><span>Tiempo</span></a><br><a href="#"><span>Altura Ríos</span></a></ul></div>
+        </div>
+        <div class="fila4 col-3">
+          <div class="p-2"><strong>Otros canales</strong><br>
+            <a href="#"><span>Facebook</span></a><br>
+            <a href="#"><span>Twitter</span></a><br> 
+            <a href="#"><span>Contacto</span></a> 
+            <div class="subsin" style="margin-top: 150px;">
+            <h5 class="subsc">Suscribete</h5>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  
+  
+  <div class="container text-center" style="font-size: 13px;"><span>El Argentino © Todos los derechos reservados · www.diarioelargentino.com.ar · Registro de Prop. Intelectual: en trámite · 9 de Julio 45 · C.P. 2820 Gualeguaychú - Argentina -Términos y condicionesyprivacidad·Ayuda</span> 
+  
+  </div>
+  <div class="container text-center"style="font-size: 13px;"><span>Powered by</span>
+  </div>
+  <div class="container" style="max-width: 105px; margin-bottom: 60px;">
+    <img src="images/logo_artic.png" alt="" style="height: 32px;">
+  </div>
+  
+  
+    </footer>
+  </body>
+</html>
